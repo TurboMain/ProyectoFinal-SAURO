@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+header .navbar {
+  background-color: rgb(224, 8, 109);
+}
+
+main {
+  background-image: url("https://seguros.lacaja.com.ar/sites/default/files/2020-11/C%25C3%25B3mo%2520crear%2520una%2520lista%2520de%2520tareas%2520para%2520que%2520tu%2520trabajo%2520rinda%2520m%25C3%25A1s.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 15%;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=estilos.css.map */

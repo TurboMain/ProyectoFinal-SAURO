@@ -1,0 +1,11 @@
+{
+  "name": "tercerapre-entrega-sauro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss:css"
+  },
+  "author": "",
+  "license": "ISC"
+}

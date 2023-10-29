@@ -1,10 +1,36 @@
-main {
-  .blocTareas {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .escribirTarea {
-      display: flex;
+body {
+  main {
+    height: 100vh;
+    .blocTareas {
+      display: block;
+      width: 100%;
+    }
+    #tareas {
+      margin-top: 10px;
+      display: block;
+      justify-content: flex-start;
+    }
+    .eliminar {
+      border: solid 2px rgb(18, 57, 143);
+      background-color: rgb(18, 57, 143);
+      color: white;
+      border-radius: 5px;
+      margin-right: 10px;
+      padding: 3px;
+      margin-bottom: 10px;
+    }
+    #guardar {
+      border: solid 2px rgb(18, 57, 143);
+      background-color: rgb(18, 57, 143);
+      color: white;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-right: 10px;
+      padding: 5px;
+    }
+    .tarea {
+      border: solid 2px rgb(18, 57, 143);
+      margin-top: 10px;
     }
   }
 }

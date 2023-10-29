@@ -7,7 +7,7 @@ const tareasGuardadas = JSON.parse(localStorage.getItem("tareas")) || [];
 
 // Mostrar las tareas almacenadas al cargar la página
 tareasGuardadas.forEach((tarea) => {
-  mostrarNota(tarea);
+  mostrarTarea(tarea);
 });
 
 guardarBtn.addEventListener("click", () => {
@@ -21,7 +21,7 @@ guardarBtn.addEventListener("click", () => {
     localStorage.setItem("tareas", JSON.stringify(tareasGuardadas));
 
     // Mostrar la tareas en la lista
-    mostrarNota(tarea);
+    mostrarTarea(tarea);
 
     // Limpiar el área de texto
     tareaTextarea.value = "";
@@ -29,10 +29,11 @@ guardarBtn.addEventListener("click", () => {
 });
 
 // Función para mostrar una tarea en la lista
-function mostrarNota(tarea) {
+function mostrarTarea(tarea) {
   const tareaElement = document.createElement("div");
   tareaElement.className = "tarea";
-  tareaElement.innerHTML = `<p>${tarea}</p><button class="eliminar">Eliminar</button>`;
+  tareaElement.innerHTML =
+    `<p>${tarea}</p><button class="eliminar">Eliminar</button>` + Date();
 
   tareasDiv.appendChild(tareaElement);
 
@@ -45,10 +46,10 @@ function mostrarNota(tarea) {
       tareasGuardadas.splice(index, 1);
     }
 
-    // Actualizar las notas en localStorage
+    // Actualizar las tareas en localStorage
     localStorage.setItem("tareas", JSON.stringify(tareasGuardadas));
 
-    // Eliminar la nota de la lista
+    // Eliminar la tareas de la lista
     tareasDiv.removeChild(tareaElement);
   });
 }

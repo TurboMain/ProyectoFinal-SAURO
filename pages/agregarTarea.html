@@ -10,6 +10,11 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="shortcut icon"
+      href="../img/logo_principal3.png"
+      type="image/x-icon"
+    />
     <!-- MI CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <title>Agregar una Tarea</title>
@@ -22,22 +27,33 @@
           <a href="../index.html"
             ><img
               class="icono-principal"
-              src="../img/icono_principal.png"
+              src="../img/logo_principal3.png"
               alt="icono de la pag"
               width="200px"
           /></a>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <button class="botonNav">
+                <a href="#">Agregar una Tarea</a>
+              </button>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
     <main>
       <div id="container">
         <h1 class="text-center">Bloc de Tareas</h1>
-        <div class="blocTareas">
+        <div class="blocTareas text-center">
           <div class="escribirTarea">
             <textarea id="tarea" placeholder="Escribe tu tarea aquí"></textarea>
+          </div>
+          <div class="botonGuardar">
             <button id="guardar">Guardar Tarea</button>
           </div>
-          <div id="tareas">
+          <div class="container" id="tareas">
             <!-- Las tareas se mostrarán aquí -->
           </div>
         </div>
@@ -49,8 +65,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/simulador.js"></script>
-    <footer>
-      <h6>CopyReight @ Todos los Derechos Reservados</h6>
-    </footer>
   </body>
 </html>

@@ -1,48 +1,121 @@
 * {
   padding: 0;
   margin: 0;
-  list-style-type: none;
 }
 
-header .nav_bar {
+body header .nav_bar {
+  margin-top: 10px;
   padding: 10px;
-  background-color: rgb(8, 8, 8);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
-main {
-  height: 100vh;
-  background-color: antiquewhite;
+body header .nav_bar img {
+  border-radius: 50px;
+  width: 100px;
 }
-main h1 {
+body header .nav_bar ul {
+  display: flex;
+}
+body header .nav_bar ul li {
+  list-style-type: none;
+}
+body header .nav_bar ul li .botonNav2 {
+  border-radius: 5px;
+  border-color: rgb(16, 57, 146);
+  background-color: rgb(18, 57, 143);
+}
+body header .nav_bar ul li .botonNav2 a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+body header .nav_bar ul li .botonNav {
+  border-radius: 5px;
+  border-color: rgb(16, 57, 146);
+  background-color: rgb(18, 57, 143);
+  margin-right: 50px;
+}
+body header .nav_bar ul li .botonNav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+body main h1 {
   padding-top: 50px;
 }
-main .portada {
+body main .portada {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
-main .portada .parrafo {
+body main .portada .parrafo {
   width: 500px;
 }
-
-footer {
-  background-color: rgb(231, 231, 231);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body main .portada .imagen2 img {
+  border-radius: 10px;
 }
-
-main .blocTareas {
+body main .botonFinal {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  border-color: rgb(16, 57, 146);
+  background-color: rgb(18, 57, 143);
+  padding: 4px;
+}
+body main .botonFinal a {
+  text-decoration: none;
+  color: white;
+}
+body main .contacto h4 {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+body main .contacto .redesSociales {
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
-main .blocTareas .escribirTarea {
-  display: flex;
+body main .contacto .redesSociales img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 60px;
+}
+
+body main {
+  height: 100vh;
+}
+body main .blocTareas {
+  display: block;
+  width: 100%;
+}
+body main #tareas {
+  margin-top: 10px;
+  display: block;
+  justify-content: flex-start;
+}
+body main .eliminar {
+  border: solid 2px rgb(18, 57, 143);
+  background-color: rgb(18, 57, 143);
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+body main #guardar {
+  border: solid 2px rgb(18, 57, 143);
+  background-color: rgb(18, 57, 143);
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px;
+}
+body main .tarea {
+  border: solid 2px rgb(18, 57, 143);
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

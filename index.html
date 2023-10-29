@@ -10,9 +10,14 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="shortcut icon"
+      href="img/logo_principal3.png"
+      type="image/x-icon"
+    />
     <!-- MI CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>Tercera Pre-Entrega Sauro</title>
+    <title>ProyectoFinal-Sauro</title>
   </head>
   <body>
     <header>
@@ -22,7 +27,7 @@
           <a href="#"
             ><img
               class="icono-principal"
-              src="img/icono_principal.png"
+              src="img/logo_principal3.png"
               alt="icono de la pag"
               width="200px"
           /></a>
@@ -30,30 +35,112 @@
         <div>
           <ul>
             <li>
-              <a href="pages/agregarTarea.html">Agregar una Tarea</a>
+              <button class="botonNav">
+                <a href="pages/agregarTarea.html">Agregar una Tarea</a>
+              </button>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+    <!-- EMPIEZA EL CONTENIDO DE LA PAGINA -->
     <main>
-      <h1 class="text-center">Bienvenido a tu Administrador de Tareas :)</h1>
+      <!-- Carrousel de imagenes -->
+      <div class="carrusel">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+                src="img/admin-tareas.jpeg"
+                class="d-block w-100"
+                height="300px"
+                alt="Imagen"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="img/carrousel1.jpg"
+                class="d-block w-100"
+                height="300px"
+                alt="Imagen"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="img/carrousel2.jpg"
+                class="d-block w-100"
+                height="300px"
+                alt="Imagen"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- Fin del carrusel -->
+      <h1 class="text-center">Administrador de Tareas en Línea</h1>
       <div class="portada">
         <div class="parrafo">
           <h4>Aqui podras organizar todas tus tareas</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad libero
-            cumque unde consectetur rerum maiores sit perspiciatis optio
-            explicabo, necessitatibus eveniet! Minima quisquam laudantium veniam
-            voluptatum consequuntur nemo repellat porro!
+            El administrador de tareas en tiempo real de ABC le permite asignar
+            y realizar un seguimiento del trabajo importante en el contexto del
+            trabajo y el procesamiento de tareas. Las empresas de servicios
+            están abrumadas con varias tareas en su agenda diaria. Este flujo de
+            información se sale de control si no se gestiona de forma adecuada
           </p>
         </div>
         <div class="imagen2">
-          <img src="img/img2.jpeg" alt="" width="250px" />
+          <img src="img/img2.jpeg" alt="" width="500px" />
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="botonFinal">
+          <a href="pages/agregarTarea.html">Agregar una Tarea</a>
+        </button>
+      </div>
+      <div class="container contacto text-center">
+        <h4>Contacto</h4>
+        <div class="redesSociales">
+          <div>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="img/facebook.png" alt="Logo de facebook"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="img/instagram.png" alt="Logo de Instagram"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><img src="img/twitter.png" alt="Lodo de Twitter"
+            /></a>
+          </div>
         </div>
       </div>
     </main>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -61,7 +148,4 @@
     ></script>
     <script src="js/simulador.js"></script>
   </body>
-  <footer>
-    <h6>CopyReight @ Todos los Derechos Reservados</h6>
-  </footer>
 </html>
